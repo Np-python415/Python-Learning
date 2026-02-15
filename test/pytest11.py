@@ -136,3 +136,32 @@ li.reverse()
 #[5, 4, 3, 2, 1, 0]
 print(li)
 '''
+'''
+列表的推导式
+基本写法：
+格式一：[表达式 for 变量 in 列表]
+# li = [2,4,6,8]
+# [print(i) for i in li] #前面的i是表达式也可以是：i*8等等
+li = []
+# for i in range(1,6):
+#     print(i)
+#     li.append(i)
+# print(li)
+[li.append(i) for i in range(1,6)]
+print(li)
+[表达式 for 变量 in 列表 if 条件]
+in 后面不仅可以放列表，还可以放range()，可迭代的对象
+#把奇数放进列表
+li = []
+# for i in range(1,11):
+#     if i % 2 == 0:
+#         li.append(i)
+# print(li)
+[li.append(i) for i in range(1,11) if i % 2 == 0]
+print(li)
+'''
+'''
+列表嵌套：一个列表里又有一个列表
+li = [1,2,3,[4,5,6]]
+print(li[3][2])
+'''
